@@ -1,0 +1,257 @@
+/*  GLOBAL STYLES*/
+
+/*Basic styling for the entire webpage body*/
+body {
+    font-family: Arial, sans-serif;
+    /* sets font type for entire page*/
+    margin: 0;
+    /*removes default browser margins*/
+    padding: 0;
+    /*removes default browser padding*/
+    background-color: #f4f4f4;
+    /*Light grey background for page*/
+    color: #333;
+    /*Dark Gray text color*/
+    line-height: 1.6;
+    /* Spacing between text lines for readability */
+}
+
+
+/*Style for the top header section (title + navigation)*/
+
+header {
+    background-color: #027a98;
+    /* blue background color same as footer */
+    color: white;
+    /*white text color*/
+    font-style: italic;
+    padding: 1rem 0;
+    /*vertical padding (top and bottom)*/
+    text-align: center;
+    /*Center all header content*/
+}
+
+/*Styles for the main title (Välkommen till min Webbplats)*/
+header h1 {
+    margin: 0 0 1rem 0;
+    /* No top margin, bottom margin for spacing */
+}
+
+/* =================================
+   NAVIGATION STYLES 
+   ================================= */
+
+/* Container for navigation links */
+
+nav {
+    margin-top: 1rem;
+    /* Space above navigation menu */
+}
+
+/* Styles for each navigation link (Hem, Om, Kontakt) */
+nav a {
+    color: white;
+    /* White text color for links */
+    text-decoration: none;
+    /* Removes underline from links */
+    font-weight: bold;
+    /* Makes text bold */
+    padding: 0.5rem 1rem;
+    /* Space inside each link button */
+    margin: 0 10px;
+    /* Space between navigation buttons */
+    border-radius: 4px;
+    /* Rounded corners on buttons */
+    transition: background-color 0.5s ease;
+    /* Smooth color change on hover */
+    display: inline-block;
+    /* Allows padding and margins on links */
+}
+
+/* Styles for navigation links when hovered or active page */
+nav a:hover,
+nav a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: underline;
+}
+
+/* =================================
+   MAIN CONTENT STYLES 
+   ================================= */
+
+/* Container for main page content */
+main {
+    padding: 2rem;
+    /* Space around main content */
+    max-width: 800px;
+    /* Maximum width to prevent content from stretching too wide */
+    margin: 0 auto;
+    /* Centers the main content on page */
+}
+
+
+/* Styles for images in main content (AI.jpg) */
+main img {
+    max-width: 100%;
+    /* Image never exceeds container width */
+    height: auto;
+    /* Maintains image proportions */
+    display: block;
+    /* Makes image a block element */
+    margin: 0 auto 2rem auto;
+    /* Centers image and adds space below */
+    border-radius: 8px;
+    /* Rounded corners on image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow effect */
+
+}
+
+/* =================================
+   CONTENT SECTION STYLES 
+   ================================= */
+
+/* Styles for content sections (white boxes with text) */
+section {
+    background-color: white;
+    padding: 2rem;
+    /* Space inside content boxes */
+    border-radius: 8px;
+    /* Rounded corners on content boxes */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow effect */
+    margin-bottom: 2rem;
+    /* Space below each section */
+}
+
+/* =================================
+   TWO-COLUMN LAYOUT STYLES 
+   ================================= */
+
+/* Container for two-column layout */
+.columns-container {
+    display: flex;
+    /* Creates flexible layout */
+    gap: 2rem;
+    /* Space between columns */
+    margin-top: 1.5rem;
+    /* Space below the h2 title */
+}
+
+/* Individual column styling */
+.column {
+    flex: 1;
+    /* Each column takes equal width */
+    background-color: #f9f9f9;
+    /* Light background for each column */
+    padding: 1.5rem;
+    /* Space inside each column */
+    border-radius: 10px;
+    /* Rounded corners */
+    border-left: 5px solid #027a98;
+    /* Blue accent border on left */
+}
+
+/* Responsive: Stack columns on small screens */
+@media (max-width: 768px) {
+    .columns-container {
+        flex-direction: column;
+        /* Stack columns vertically on small screens */
+        gap: 1rem;
+        /* Reduced gap on mobile */
+    }
+}
+
+/* =================================
+   TEXT STYLES 
+   ================================= */
+
+/* Styles for section headings (like "Hej!", "Om mig", "Kontakta mig") */
+h2 {
+    color: #027a98;
+    /* Blue color matching header/footer */
+    margin-top: 0;
+    /* No space above heading */
+}
+
+/* Styles for paragraphs */
+p {
+    margin-bottom: 1rem;
+    /* Space below each paragraph */
+}
+
+
+/* Styles for bold text (like "systemutvecklare", "lyssna på musik") */
+strong {
+    color: #027a98;
+    /* Blue color for emphasis */
+}
+
+/* =================================
+   LINK STYLES 
+   ================================= */
+
+/* Links in content */
+/* Styles for links inside content sections (like email link) */
+section a {
+    color: #027a98;
+}
+
+/* Hover effect for content links */
+section a:hover {
+    color: #047e5d;
+    /* Darker green color on hover */
+}
+
+/* =================================
+   FOOTER STYLES 
+   ================================= */
+/* Styles for bottom footer section */
+footer {
+    background-color: #027a98;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    /* Space inside footer */
+    margin-top: 2rem;
+    /* Space above footer */
+}
+
+/* Styles for copyright text in footer */
+footer p {
+    margin: 0;
+    /* No margins around footer text */
+}
+
+
+
+/* =================================
+   RESPONSIVE DESIGN (Mobile devices) 
+   ================================= */
+
+/* Responsive design */
+
+/* Styles for screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+
+    /* Makes navigation links stack vertically on small screens */
+    nav a {
+        display: block;
+        /* Each link takes full width */
+        margin: 0.5rem 0;
+        /* Vertical spacing between links */
+    }
+
+    /* Reduces padding on small screens */
+    main {
+        padding: 1rem;
+        /* Less space around content */
+    }
+
+
+    /* Reduces padding inside sections on small screens */
+    section {
+        padding: 1rem;
+        /* Less space inside content boxes */
+    }
+}
