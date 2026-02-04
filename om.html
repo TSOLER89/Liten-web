@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Om Mig- Min Första Webbplats</title>
   <link rel="stylesheet" href="style.css">
+  <script src="liten-Web.js"></script>
+
 
 </head>
 
@@ -16,44 +18,64 @@
     <nav>
       <a href="index.html">Hem</a>
       <a href="om.html" class="active">Om</a>
+      <a href="projects.html">Projekt</a>
       <a href="kontakt.html">Kontakt</a>
 
     </nav>
   </header>
 
   <main>
-    <section class="two-columns">
-      <h2>Om mig</h2>
-      <div class="columns-container">
-        <article class="column">
+    <section class="intro" style="margin-bottom:2.5rem;">
+      <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2.5rem;">
+        <div style="flex:0 0 180px;text-align:center;">
+          <img src="Image/CvBild.jpg" alt="Profilbild"
+            style="max-width:180px;width:90%;border-radius:50%;box-shadow:0 4px 18px rgba(180,120,200,0.13);margin-bottom:1.2rem;">
+          <div style="margin-bottom:1.2rem;">
+            <span class="badge badge-animate-left">Musik</span>
+            <span class="badge badge-animate-left">Dans</span>
+            <span class="badge badge-animate-left">Träning</span>
+            <span class="badge badge-animate-left">Vänner</span>
+            <span class="badge badge-animate-left">Nya saker</span>
+          </div>
+        </div>
+        <div style="flex:1;min-width:250px;max-width:600px;">
+
           <p>
-            Hej! Jag pluggar till <strong>systemutvecklare</strong> och tycker det är väldigt spännande
-            att lära mig mer om programmering och webbutveckling. Jag gillar att skapa saker med kod
-            och se mina idéer bli till verklighet på skärmen.
+            Jag pluggar till <strong>systemutvecklare</strong> och tycker det är väldigt spännande att lära mig mer
+            om programmering och webbutveckling.
           </p>
+          <p>
+            Jag är en engagerad och nyfiken systemutvecklarstudent som brinner för att skapa effektiva och
+            användarvänliga digitala lösningar. Genom min utbildning har jag fått en solid grund inom både frontend och
+            backendutveckling. Här kan du se mina projekt, erfarenheter och kompetenser.
+          </p>
+          <section id="skills">
+            <h3>Kompetenser</h3>
+            <div id="skills-list" style="margin-bottom:1.2rem;"></div>
+            <div>
+              <span class="badge badge-animate-right">Systemutveckling</span>
+              <span class="badge badge-animate-right">Webbutveckling</span>
+              <span class="badge badge-animate-right">Design</span>
+              <span class="badge badge-animate-right">Programmering</span>
+              <span class="badge badge-animate-right">Databaser</span>
+            </div>
+          </section>
           <p>
             På fritiden tycker jag om att <strong>lyssna på musik</strong>, <strong>dansa</strong> och
-            <strong>träna</strong>.
-            Musik ger mig energi och dans får mig att slappna av.
-          </p>
-        </article>
-
-        <article class="column">
-          <p>
-            Träning hjälper mig att må bra både fysiskt och mentalt. Det ger mig struktur i vardagen
-            och hjälper mig att fokusera bättre på mina studier.
+            <strong>träna</strong>. Musik ger mig energi och dans får mig att slappna av.
           </p>
           <p>
-            När jag inte pluggar eller tränar gillar jag att umgås med vänner, testa nya saker och utveckla mina
-            kunskaper inom teknik och design.
+            Träning hjälper mig att må bra både fysiskt och mentalt. Det ger mig struktur i vardagen och hjälper mig att
+            fokusera bättre på mina studier. När jag inte pluggar eller tränar gillar jag att umgås med vänner, testa
+            nya saker och utveckla mina kunskaper inom teknik och design.
           </p>
-        </article>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Min Webbplats</p>
+    <p>&copy; 2026 Min Webbplats</p>
   </footer>
 
 </body>

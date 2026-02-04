@@ -6,36 +6,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Min Första Webbplats</title>
   <link rel="stylesheet" href="style.css">
-
-
+  <script src="liten-Web.js"></script>
 </head>
 
 <body>
   <header>
-    <h1> Välkommen till min Webbplats</h1>
-
-
     <nav>
       <a href="index.html" class="active">Hem</a>
       <a href="om.html">Om</a>
+      <a href="projects.html">Projekt</a>
       <a href="kontakt.html">Kontakt</a>
     </nav>
-
   </header>
 
   <main>
-    <img src="AI.jpg">
-    <section class="intro">
-      <h2>Hej!</h2>
-      <p> Detta är min första webbplats byggd med HTML och CSS. Här kan du läsa mer om mig och kontakta mig.
-      </p>
+    <img src="Image/CvBild.jpg" alt="CV Bild"
+      style="max-width:250px; width:90%; display:block; margin: 0 auto 1.5rem auto; border-radius: 50%; box-shadow: 0 4px 18px rgba(180,120,200,0.13);">
 
+    <section class="intro">
+      <h2>Hej, Välkommen till min portfolio!</h2>
+      <p> Detta är min första webbplats byggd med HTML, CSS och JavaScript. Här kan du läsa mer om mig, bläddra igenom
+        mina projekt och kontakta mig.
+      </p>
     </section>
+    <div class="logo-container">
+      <img src="Image/github.svg" alt="GitHub" class="floating-logo">
+      <img src="Image/linkedin.jpg" alt="LinkedIn" class="floating-logo">
+      <img src="Image/dotnet.svg" alt=".NET" class="floating-logo">
+      <img src="Image/htmx.svg" alt="HTMX" class="floating-logo">
+      <img src="Image/react.svg" alt="React" class="floating-logo">
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Min Webbplats</p>
+    <p>&copy; 2026 Min Webbplats</p>
   </footer>
+  <script src="floating-logos.js"></script>
 </body>
 
 </html>
