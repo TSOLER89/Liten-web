@@ -471,17 +471,265 @@ footer p {
     box-shadow: 0 4px 16px 0 rgba(180, 120, 200, 0.18);
 }
 
+/* =================================
+   BADGES FOR SKILLS - UPPDATERAD
+   ================================= */
+
 .badge {
     display: inline-block;
-    padding: 5px 10px;
-    margin: 4px;
-    background-color: #4caf50;
-    color: white;
-    border-radius: 8px;
-    font-size: 14px;
-    transition: transform 0.2s;
+    background: linear-gradient(90deg, #027a98 0%, #026d85 100%);
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.4em 1em;
+    border-radius: 16px;
+    margin: 0.2em 0.3em 0.2em 0;
+    box-shadow: 0 2px 8px 0 rgba(2, 122, 152, 0.15);
+    letter-spacing: 0.3px;
+    border: none;
+    transition: background 0.18s, color 0.18s, transform 0.3s;
 }
 
 .badge:hover {
-    transform: scale(1.2);
+    background: linear-gradient(90deg, #026d85 0%, #027a98 100%);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.badge-pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 2px 8px 0 rgba(2, 122, 152, 0.15);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 4px 16px 0 rgba(2, 122, 152, 0.25);
+    }
+}
+
+/* =================================
+   CONTACT PAGE SPECIFIC STYLES
+   ================================= */
+
+.contact-hero {
+    background: linear-gradient(135deg, #027a98 0%, #026d85 100%);
+    padding: 2.5rem 2rem;
+    margin-bottom: 3rem;
+}
+
+.contact-hero h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+}
+
+.contact-subtitle {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.contact-badges {
+    margin-top: 1.5rem;
+}
+
+.contact-content {
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.contact-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(2, 122, 152, 0.15);
+    border-color: #027a98;
+}
+
+.contact-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, #027a98 0%, #026d85 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.contact-card h3 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.contact-card p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.contact-link {
+    display: inline-block;
+    color: #027a98;
+    font-weight: 600;
+    text-decoration: none;
+    word-break: break-all;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s;
+    background: rgba(2, 122, 152, 0.1);
+}
+
+.contact-link:hover {
+    background: rgba(2, 122, 152, 0.2);
+    transform: scale(1.05);
+}
+
+.response-time {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #027a98;
+    margin-top: 0.5rem;
+}
+
+.interests-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.interests-list li {
+    padding: 0.5rem;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.interests-list li:before {
+    content: "✓ ";
+    color: #027a98;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.contact-info-box {
+    background: linear-gradient(120deg, #fbeffb 0%, #e0f7fa 100%);
+    padding: 2.5rem;
+    border-radius: 16px;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 20px rgba(180, 120, 200, 0.10);
+}
+
+.contact-info-box h3 {
+    color: #027a98;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.contact-info-box p {
+    color: #5e4b5c;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.social-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.social-section h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.github-btn {
+    background: #333;
+    color: #fff;
+}
+
+.github-btn:hover {
+    background: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.linkedin-btn {
+    background: #0077b5;
+    color: #fff;
+}
+
+.linkedin-btn:hover {
+    background: #005885;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 119, 181, 0.3);
+}
+
+/* Responsive för kontaktsidan */
+@media (max-width: 768px) {
+    .contact-hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .social-btn {
+        justify-content: center;
+    }
 }
