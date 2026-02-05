@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Om Mig - Min Första Webbplats</title>
   <link rel="stylesheet" href="style.css">
+  <script src="fade-in.js"></script>
 </head>
 
 <body>
@@ -45,28 +46,51 @@
             användarvänliga digitala lösningar. Genom min utbildning har jag fått en solid grund inom både frontend och
             backendutveckling. Här kan du se mina projekt, erfarenheter och kompetenser.
           </p>
-          <section id="skills">
-            <h3>Kompetenser</h3>
-            <div id="skills-list" style="margin-bottom:1.2rem;"></div>
-            <div>
-              <span class="badge badge-animate-right">Systemutveckling</span>
-              <span class="badge badge-animate-right">Webbutveckling</span>
-              <span class="badge badge-animate-right">Design</span>
-              <span class="badge badge-animate-right">Programmering</span>
-              <span class="badge badge-animate-right">Databaser</span>
-            </div>
-          </section>
-          <p>
-            På fritiden tycker jag om att <strong>lyssna på musik</strong>, <strong>dansa</strong> och
-            <strong>träna</strong>. Musik ger mig energi och dans får mig att slappna av.
-          </p>
-          <p>
-            Träning hjälper mig att må bra både fysiskt och mentalt. Det ger mig struktur i vardagen och hjälper mig att
-            fokusera bättre på mina studier. När jag inte pluggar eller tränar gillar jag att umgås med vänner, testa
-            nya saker och utveckla mina kunskaper inom teknik och design.
-          </p>
         </div>
       </div>
+    </section>
+
+    <!-- Kompetenser med interaktiv mouse/touch följning -->
+    <section id="skills" class="skills-section">
+      <h3 style="text-align:center; color:#027a98; font-size:1.8rem; margin-bottom:2rem;">Mina Kompetenser</h3>
+
+      <div class="interactive-skills-container" id="skillsContainer">
+        <div class="interactive-skill">HTML</div>
+        <div class="interactive-skill">CSS</div>
+        <div class="interactive-skill">JavaScript</div>
+        <div class="interactive-skill">SQL</div>
+        <div class="interactive-skill">Git</div>
+        <div class="interactive-skill">GitHub</div>
+        <div class="interactive-skill">Testning</div>
+        <div class="interactive-skill">Systemutveckling</div>
+        <div class="interactive-skill">Webbutveckling</div>
+        <div class="interactive-skill">Design</div>
+        <div class="interactive-skill">Programmering</div>
+        <div class="interactive-skill">C#</div>
+        <div class="interactive-skill">.NET</div>
+        <div class="interactive-skill">React</div>
+        <div class="interactive-skill">Node.js</div>
+        <div class="interactive-skill">Databaser</div>
+        <div class="interactive-skill">API</div>
+        <div class="interactive-skill">JSON</div>
+      </div>
+
+      <p style="text-align:center; color:#666; font-size:0.9rem; margin-top:2rem;">
+        Rör musen eller fingret över kompetenserna för att interagera med dem
+      </p>
+    </section>
+
+    <!-- About section -->
+    <section style="margin-top:2.5rem;">
+      <p>
+        På fritiden tycker jag om att <strong>lyssna på musik</strong>, <strong>dansa</strong> och
+        <strong>träna</strong>. Musik ger mig energi och dans får mig att slappna av.
+      </p>
+      <p>
+        Träning hjälper mig att må bra både fysiskt och mentalt. Det ger mig struktur i vardagen och hjälper mig att
+        fokusera bättre på mina studier. När jag inte pluggar eller tränar gillar jag att umgås med vänner, testa
+        nya saker och utveckla mina kunskaper inom teknik och design.
+      </p>
     </section>
   </main>
 
@@ -74,7 +98,8 @@
     <p>&copy; 2026 Min Webbplats</p>
   </footer>
 
-  <script src="liten-Web.js"></script>
+  <script src="interactive-skills.js"></script>
+
 </body>
 
 </html>
